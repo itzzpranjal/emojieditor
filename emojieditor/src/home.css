@@ -1,0 +1,117 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #fceabb, #f8b500);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  color: #222;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 30px;
+  color: #fff;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #fff;
+  opacity: 0.9;
+}
+
+.emoji-container {
+  margin: 30px auto 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  width: 180px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.emoji {
+  cursor: pointer;
+  font-size: inherit;
+}
+
+.slide-container {
+  margin: 25px;
+}
+
+.slider {
+  width: 70%;
+  height: 6px;
+  border-radius: 5px;
+  background: linear-gradient(90deg, #ff7eb3, #ff758c, #ffb199);
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #ff6a95;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.angle-container {
+  margin: 20px;
+}
+
+.rotate-image {
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 3px 6px rgba(0,0,0,0.3));
+}
+
+.rotate-image:hover {
+  transform: rotate(20deg) scale(1.2);
+}
+
+.emoji-picker {
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 400px;
+}
+
+.emoji-picker button {
+  font-size: 1.6rem;
+  padding: 10px 14px;
+  border: none;
+  background: linear-gradient(145deg, #ffffff, #f1f1f1);
+  border-radius: 15px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15),
+              -3px -3px 8px rgba(255, 255, 255, 0.8);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.emoji-picker button:hover {
+  background: linear-gradient(145deg, #ffe1f0, #ffd7eb);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 8px 20px rgba(255, 118, 158, 0.3);
+}

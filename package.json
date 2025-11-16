@@ -1,0 +1,10 @@
+{
+  "name": "emojieditor-root",
+  "private": true,
+  "scripts": {
+    "dev": "npm --prefix ./emojieditor run dev",
+    "build": "npm --prefix ./emojieditor run build",
+    "preview": "npm --prefix ./emojieditor run preview",
+    "lint": "npm --prefix ./emojieditor run lint"
+  }
+}
